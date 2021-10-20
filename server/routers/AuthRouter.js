@@ -22,8 +22,9 @@ router.post("/register", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const getUser = await User.find();
-    const user = await getUser.save();
-    res.status(200).json(user);
+    // const user = await getUser.save();
+    console.log(getUser);
+    res.status(200).json(getUser);
   } catch (err) {
     res.status(404).json(err);
   }

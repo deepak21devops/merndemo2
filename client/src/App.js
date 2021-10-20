@@ -6,7 +6,7 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <LoginPage />
           </Route>
 

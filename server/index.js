@@ -14,6 +14,6 @@ mongoose
   .then(() => console.log("App Connected to Db"))
   .catch((err) => console.log(err));
 
-app.use("/api/auth/", userRouter);
+app.use("/api/auth", userRouter);
 
 app.listen(5001, () => console.log("App listening on port 5001"));
